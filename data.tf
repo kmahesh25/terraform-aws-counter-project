@@ -33,3 +33,7 @@ data "aws_ami" "amazon_linux" {
     values = ["amzn2-ami-kernel-*-hvm-*-x86_64-gp2"]
   }
 }
+
+data "aws_s3_bucket" "s3_bucket" {
+  bucket = var.s3_bucket_name
+}

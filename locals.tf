@@ -14,8 +14,8 @@ locals {
   alb_sg                 = module.alb_sg.sg_id
   asg_sg                 = module.asg_sg.sg_id
   key_name               = module.key_pair.key_pair_name
-  s3_bucket_arn          = module.s3_1.s3_bucket_arn
-  s3_bucket_id           = module.s3_1.s3_bucket_id
+  s3_bucket_arn          = data.aws_s3_bucket.s3_bucket.arn
+  s3_bucket_id           = data.aws_s3_bucket.s3_bucket.id
   iam_role_arn           = module.iam_role_1.iam_role_arn
   iam_profile_name       = module.iam_role_1.iam_profile_name
   asg_id                 = module.asg_1.asg_id
