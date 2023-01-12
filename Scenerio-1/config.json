@@ -1,0 +1,7 @@
+{
+    "AutoScalingGroupName": "project-counter-asg",
+    "Preferences": {
+      "InstanceWarmup": 60,
+      "MinHealthyPercentage": 50
+    }
+}

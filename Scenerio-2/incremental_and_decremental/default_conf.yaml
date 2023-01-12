@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: default-conf
+  namespace: default
+data:
+  default.conf: |
+    server {
+      listen 80;
+      listen [::]:80;
+      server_name _;
+
+      root        /var/lib/nginx/www/html;
+      charset     utf-8;
+
+      location / {
+      }
+    }
